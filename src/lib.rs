@@ -10,7 +10,8 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet(name: &str) {
-    log(format!("hello {}", name).as_str());
+    // log(format!("hello {}", name).as_str());
+    println!("hello {}!", name);
 }
 
 #[cfg(test)]
