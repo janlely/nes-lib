@@ -55,7 +55,7 @@ impl CPU {
     pub fn init(&mut self) {
         self.reset();
     }
-    pub fn reset(&mut self) -> Result<()>
+    pub fn reset(&mut self) -> Result<()> {
 
         self.r_pc = self.read_address(RESET_VECTOR)?;
         self.r_a = 0;
